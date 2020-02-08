@@ -1,0 +1,130 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 100px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 38%;
+    /* border: 1px solid black; */
+}
+
+.details h1 {
+    margin: 0;
+    font-weight: 200;
+    font-size: 26px;
+    color: hsl(234, 12%, 34%);
+}
+
+.details h2 {
+    margin: 0;
+    font-size: 26px;
+    color: hsl(234, 12%, 34%);
+}
+
+.details p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: 280px 280px 280px;
+    grid-gap: 25px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px hsl(0, 0%, 85%);
+    margin-bottom: 25px;
+    /* height: 250px; */
+    /* width: 300px; */
+}
+
+.light_blue {
+    border-top: 3.5px solid hsl(180, 62%, 55%);
+}
+
+.red {
+    border-top: 3.5px solid hsl(0, 78%, 62%);
+}
+
+.blue {
+    border-top: 3.5px solid hsl(212, 86%, 64%);
+}
+
+.yellow {
+    border-top: 3.5px solid hsl(34, 97%, 64%)
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 18px;
+    color: hsl(234, 12%, 34%);
+}
+
+.card p {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 11px;
+    color: hsl(229, 6%, 66%);
+}
+
+.card .card_img {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.card .card_img img {
+    height: 50px;
+}
+
+@media(max-width: 375px) {
+    body {
+        overflow: scroll;
+    }
+    main {
+        padding: 30px 20px;
+    }
+    .details {
+        width: 100%;
+        text-align: center;
+    }
+    .details h1 {
+        font-size: 20px;
+    }
+    .details h2 {
+        font-size: 20px;
+    }
+    .detials p {
+        font-size: 15px;
+    }
+    .cards {
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 280px;
+        grid-gap: 25px;
+        align-items: center;
+    }
+}
